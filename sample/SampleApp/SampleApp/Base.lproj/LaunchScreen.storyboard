@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KHu-Ri-zbg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blur1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ApY-Iz-zMZ"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6n-Hd-pzP">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iY3-0g-sBk">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5O-cf-Tzt">
+                                            <attributedString key="attributedText">
+                                                <fragment content="POWER STAR">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="48" name="AmericanTypewriter-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="tintColor" red="0.015982289909999999" green="0.025761778119999999" blue="0.04347826087" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="A5O-cf-Tzt" firstAttribute="centerX" secondItem="iY3-0g-sBk" secondAttribute="centerX" id="dd3-5I-5JS"/>
+                                        <constraint firstItem="A5O-cf-Tzt" firstAttribute="centerY" secondItem="iY3-0g-sBk" secondAttribute="centerY" id="e0q-hn-RyV"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ApY-Iz-zMZ" secondAttribute="bottom" id="2Sc-xX-Ntu"/>
+                            <constraint firstItem="b6n-Hd-pzP" firstAttribute="top" secondItem="KHu-Ri-zbg" secondAttribute="top" id="Mm4-3I-ntU"/>
+                            <constraint firstItem="ApY-Iz-zMZ" firstAttribute="leading" secondItem="KHu-Ri-zbg" secondAttribute="leading" id="PXp-iN-QKg"/>
+                            <constraint firstAttribute="bottom" secondItem="b6n-Hd-pzP" secondAttribute="bottom" id="Ybr-VV-Ba0"/>
+                            <constraint firstAttribute="trailing" secondItem="b6n-Hd-pzP" secondAttribute="trailing" id="Zyt-DQ-2uQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ApY-Iz-zMZ" secondAttribute="trailing" id="aP9-dg-mwH"/>
+                            <constraint firstItem="b6n-Hd-pzP" firstAttribute="leading" secondItem="KHu-Ri-zbg" secondAttribute="leading" id="qjz-4c-ebL"/>
+                            <constraint firstItem="ApY-Iz-zMZ" firstAttribute="top" secondItem="KHu-Ri-zbg" secondAttribute="top" id="xVi-lW-u4w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blur1.png" width="427" height="549"/>
+    </resources>
+</document>
